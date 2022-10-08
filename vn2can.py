@@ -59,7 +59,7 @@ while True:
         bus.send(msg)
         bus.send(msg2)
         if(current_time>=last_gps_send+50):
-            byte_data3 = dct["PosLat"].to_bytes(2,"little", signed=True)+dct["PosLon"].to_bytes(2,"little", signed=True)
+            byte_data3 = dct["PosLat"].to_bytes(4,"little", signed=True)+dct["PosLon"].to_bytes(4,"little", signed=True)
             msg3 = can.Message(arbitration_id=0x0CA,data=byte_data3, is_extended_id=False)
             bus.send(msg3)
         

@@ -38,15 +38,15 @@ BO_ 200 Ori: 6 Telemetry
    SG_ Pitch : 16|16@1- (0.1,0) [-20000|20000] "Degrees" Vector__XXX
    SG_ Roll : 32|16@1- (0.1,0) [-20000|20000] "Degrees" Vector__XXX
 
-BO_ 201 Accel: 6 Telemetry
+BO_ 201 Accel: 8 Telemetry
    SG_ AccelX : 0|16@1- (0.001,0) [-30000|30000] "m/s^2" Vector__XXX
    SG_ AccelY : 16|16@1- (0.001,0) [-30000|30000] "m/s^2" Vector__XXX
    SG_ AccelZ : 32|16@1- (0.001,0) [-30000|30000] "m/s^2" Vector__XXX
-   SG_ Speed : 48|16@1+ (1,0) [0|0] "m/s" Vector__XXX
+   SG_ Speed : 48|16@1+ (1,0) [0|300] "m/s" Vector__XXX
 
-BO_ 202 GPS: 0 Telemetry
-   SG_ PosLat : 0|32@1- (1e-06,0) [0|0] "" Vector__XXX
-   SG_ PosLon : 32|32@1- (1e-06,0) [0|0] "" Vector__XXX
+BO_ 202 GPS: 8 Telemetry
+   SG_ PosLat : 0|32@1- (1e-06,0) [-2.14748e+09|2.14748e+09] "" Vector__XXX
+   SG_ PosLon : 32|32@1- (1e-06,0) [-2.14748e+09|2.14748e+09] "" Vector__XXX
 
 BA_DEF_ BO_ "GenMsgBackgroundColor" STRING ;
 BA_DEF_ BO_ "GenMsgForegroundColor" STRING ;
